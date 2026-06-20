@@ -1,0 +1,16 @@
+[package]
+name = "wordcount-rs"
+version = "1.0.0"
+edition = "2021"
+description = "A fast, parallel word/line/character counter — a Rust take on the classic `wc` command"
+license = "MIT"
+
+[[bin]]
+name = "wordcount-rs"
+path = "src/main.rs"
+
+[dependencies]
+
+[profile.release]
+opt-level = 3
+lto = true
